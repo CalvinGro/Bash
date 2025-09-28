@@ -1,0 +1,5 @@
+How did you store the values used later in the confirmation?
+    - I stored them as variables using $ to indicate that its a var.
+
+How did you create the username value?
+    - I used string concatication to create it combining the $first and $last names. 
