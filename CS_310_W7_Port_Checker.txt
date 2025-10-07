@@ -1,0 +1,18 @@
+1. How did you check if a port was being used?
+
+I used netstat -t to get a list of all the THC ports being used. I first skipped 
+over the first 2 rows then I only took the second half of the fourth column of the 
+remaining rows, because that was the port number.
+
+
+2. How did you handle the verbose flag?
+
+I used an if statement to check if -v, --verbose, or nothing was inputed as args. 
+Every other case is handled by my program.
+
+3. Since this script may require root, how did you warn the user about this?
+
+It would only require root if the -p flag was used on netstat to show the process
+names, which was not an abilty provided in the port-check. Thus, I didn't have to
+warn the user.
+

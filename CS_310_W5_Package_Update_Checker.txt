@@ -1,0 +1,28 @@
+1. How did you get the list of packages?
+
+    I got the list of packages using apt list --upgradable, which 
+    creates a list of every package that could be upgraded
+2. What is the crontab sequence to run the script?
+
+    I used the sequence: @weekly \home\frogg\Programming\Bash\pkg-check.sh
+
+3. Since this script would require root, how do you install a crontab for root?
+
+    I installing the script with sudo crontab -e, which lets me edit the crontab with root controls.
+    Here is exactly what i did:
+
+    sudo crontab -e
+    [sudo] password for frogg:
+    no crontab for root - using an empty one
+
+    Select an editor.  To change later, run 'select-editor'.
+      1. /bin/nano        <---- easiest
+      2. /usr/bin/vim.basic
+      3. /usr/bin/vim.tiny
+      4. /bin/ed
+
+    Choose 1-4 [1]: 1
+
+    THEN IN THE CRONTAB I INPUTED: @weekly \home\frogg\Programming\Bash\pkg-check.sh
+
+    crontab: installing new crontab
